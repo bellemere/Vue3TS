@@ -1,0 +1,7 @@
+{
+  "pageNotFound": "Oops, you seem lost",
+  "mainPage": {
+    "sign": "sign",
+    "login": "login"
+  }
+}
