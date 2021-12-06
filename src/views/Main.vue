@@ -1,5 +1,15 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <div class="main"><DashBoard /> <router-view /></div>
 </template>
+
+<script setup lang="ts">
+import DashBoard from "../components/Main/DashBoard.vue";
+</script>
+
+<style scoped lang="less">
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+</style>

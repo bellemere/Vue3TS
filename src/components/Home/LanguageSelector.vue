@@ -46,13 +46,13 @@ export default defineComponent({
     },
     setLang(lang: string) {
       i18nSetup(lang);
-      this.text = this.$translate("mainPage.lang");
+      this.text = this.$translate("homePage.lang");
       this.$emit("setupLang", lang);
       this.showItems = false;
     },
   },
   created() {
-    this.text = this.$translate("mainPage.lang");
+    this.text = this.$translate("homePage.lang");
   },
 });
 </script>

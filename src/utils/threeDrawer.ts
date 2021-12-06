@@ -1,4 +1,5 @@
 import {
+  Cache,
   Scene,
   WebGLRenderer,
   PerspectiveCamera,
@@ -115,6 +116,7 @@ export default class threeDrawer {
 
   loadGltf(path: string): Promise<GLTF> {
     return new Promise<GLTF>((resolve, reject) => {
+      Cache.enabled = true;
       const loader = new GLTFLoader();
       loader.load(
         path,

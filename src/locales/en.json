@@ -1,10 +1,14 @@
 {
-  "mainPage": {
+  "homePage": {
     "sign": "Sign Up",
     "login": "Sign In",
     "username": "Username",
     "password": "Password",
     "lang": "English"
+  },
+  "mainPage": {
+    "chat": "Chat",
+    "anime": "Anime"
   },
   "pageNotFound": "Oops, you seem lost"
 }

@@ -25,13 +25,13 @@ export default defineComponent({
   },
   methods: {
     produceText() {
-      this.sign = this.$translate("mainPage.sign");
-      this.login = this.$translate("mainPage.login");
-      this.username = this.$translate("mainPage.username");
-      this.password = this.$translate("mainPage.password");
+      this.sign = this.$translate("homePage.sign");
+      this.login = this.$translate("homePage.login");
+      this.username = this.$translate("homePage.username");
+      this.password = this.$translate("homePage.password");
     },
     directToMain() {
-      this.$router.push("/Main");
+      this.$router.push("/main/chat");
     },
   },
   watch: {
