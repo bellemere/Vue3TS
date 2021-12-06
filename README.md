@@ -18,6 +18,7 @@ All of these above can be told me via issues.
 - [x] A simple 3D model with three.js
 - [x] A simple plugin of i18n
 - [x] A basic vue-route
+- [x] Some simple animation
 - [ ] A simple chat room(Rust as backend)
-- [ ] Vue3+GSAP
+- [ ] Vue3 + GSAP
 
