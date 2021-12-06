@@ -1,7 +1,10 @@
 {
-  "pageNotFound": "哇哦，你好像迷路了",
   "mainPage": {
     "sign": "注册",
-    "login": "登录"
-  }
+    "login": "登录",
+    "username": "用户名",
+    "password": "密码",
+    "lang": "中文"
+  },
+  "pageNotFound": "哇哦，你好像迷路了"
 }

@@ -1,20 +1,23 @@
 import zh_locale from "./zh.json";
 import en_locale from "./en.json";
 import { Lang } from "../typings";
-
-const DEFAULT_LANG = "zh";
-const LOCALSTORAGE_KEY = "language_key";
+import { DEFAULT_LANG, LOCALSTORAGE_KEY } from "../global";
 
 const locales = {
   zh: zh_locale,
   en: en_locale,
 };
 
-/* eslint-disable */
-export function i18nSetup(lang?: string): Lang {
-  const setting_lang: string =
+export function i18nSetup(lang?: string): void {
+  const default_lang =
     lang || window.localStorage.getItem(LOCALSTORAGE_KEY) || DEFAULT_LANG;
-  window.localStorage.setItem(LOCALSTORAGE_KEY, setting_lang);
+  window.localStorage.setItem(LOCALSTORAGE_KEY, default_lang);
+}
 
-  return locales[setting_lang as keyof typeof locales];
+export function getI18nLang(): string {
+  return window.localStorage.getItem(LOCALSTORAGE_KEY) || DEFAULT_LANG;
+}
+
+export function i18nLocales(): Lang {
+  return locales;
 }

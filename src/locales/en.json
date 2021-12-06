@@ -1,7 +1,10 @@
 {
-  "pageNotFound": "Oops, you seem lost",
   "mainPage": {
-    "sign": "sign",
-    "login": "login"
-  }
+    "sign": "Sign Up",
+    "login": "Sign In",
+    "username": "Username",
+    "password": "Password",
+    "lang": "English"
+  },
+  "pageNotFound": "Oops, you seem lost"
 }

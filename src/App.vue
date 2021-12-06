@@ -7,6 +7,9 @@ html,
 body {
   width: 100%;
   height: 100%;
+}
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -18,5 +21,7 @@ body {
   color: #2c3e50;
   height: 100%;
   width: 100%;
+  font-size: 14px;
+  line-height: 16px;
 }
 </style>
