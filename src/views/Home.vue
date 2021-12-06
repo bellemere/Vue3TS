@@ -9,9 +9,9 @@
 </template>
 
 <script lang="ts" setup>
-import MainPageShoes from "../components/MainPageShoes.vue";
-import LanguageSelector from "../components/LanguageSelector.vue";
-import LoginArea from "../components/LoginArea.vue";
+import MainPageShoes from "../components/Home/MainPageShoes.vue";
+import LanguageSelector from "../components/Home/LanguageSelector.vue";
+import LoginArea from "../components/Home/LoginArea.vue";
 import { ref } from "vue";
 import { getI18nLang } from "../locales";
 
