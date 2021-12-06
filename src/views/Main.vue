@@ -1,5 +1,8 @@
 <template>
-  <div class="main"><DashBoard /> <router-view /></div>
+  <div class="main">
+    <DashBoard />
+    <div class="view"><router-view /></div>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -11,5 +14,9 @@ import DashBoard from "../components/Main/DashBoard.vue";
   display: flex;
   width: 100%;
   height: 100%;
+  .view {
+    width: calc(100% - 60px);
+    height: 100%;
+  }
 }
 </style>

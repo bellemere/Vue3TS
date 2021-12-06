@@ -18,6 +18,14 @@ const routes: Array<RouteRecordRaw> = [
         component: () =>
           import(/* webpackChunkName: "chat" */ "../components/Main/Chat.vue"),
       },
+      {
+        path: "anime",
+        name: "Anime",
+        component: () =>
+          import(
+            /* webpackChunkName: "anime" */ "../components/Main/Anime.vue"
+          ),
+      },
     ],
   },
   {

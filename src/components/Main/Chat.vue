@@ -1,4 +1,4 @@
-<template><div class="chat"></div></template>
+<template><div class="chat">chat</div></template>
 
 <style scoped lang="less">
 .chat {

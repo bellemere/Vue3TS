@@ -73,7 +73,7 @@ export default defineComponent({
 @expand-width: 150px;
 @sec: 0.25s;
 .dashboard {
-  background-color: @green;
+  background: @green;
   width: @width;
   height: 100%;
   transition: all @sec;
