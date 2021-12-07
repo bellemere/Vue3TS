@@ -1,24 +1,24 @@
-# bellemere
-
 ## Project setup
 ```
 yarn install
-```
-
-### Compiles and hot-reloads for development
-```
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## A brief Intro 
+I'm a beginner to both Vue3 and Typescript. When learning Vue3, I found there are not many resourses about how to build a entire vue3+typescript project.
+So I built this project to practise what I learned from vue3 and typescript.
+Considering I'm just a beginner, there are definitely many mistakes in this project.
 
-### Lints and fixes files
-```
-yarn lint
-```
+But I think mistakes make a person progress, so any advice like "you can do better here"/"you shouldn't do so there" are welcomed.
+Also, if you have some interesting features wishing me to write a demo, you can tell me too.
+All of these above can be told me via issues.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Todo List
+- [x] A simple vue3+ts template project
+- [x] A simple 3D model with three.js
+- [x] A simple plugin of i18n
+- [x] A basic vue-route
+- [x] Some simple animation
+- [ ] A simple chat room(Rust as backend)
+- [ ] Vue3 + GSAP
+
