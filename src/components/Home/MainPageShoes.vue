@@ -22,7 +22,7 @@ export default defineComponent({
 
       const gltf = await shoeDrawer.loadGltf("/sneaker/scene.gltf");
 
-      shoeDrawer.setGLTFPosition(gltf, [-0.15, -0.15, 0.05]);
+      shoeDrawer.setGLTFPosition(gltf, [-0.15, -0.1, 0.05]);
       shoeDrawer.enableControl();
       shoeDrawer.enableTransform(gltf, 2);
       shoeDrawer.render();

@@ -111,7 +111,7 @@ export default class threeDrawer {
     const [x, y, z] = position;
     gltf.scene.translateX(x);
     gltf.scene.translateY(y);
-    gltf.scene.translateY(z);
+    gltf.scene.translateZ(z);
   }
 
   loadGltf(path: string): Promise<GLTF> {
