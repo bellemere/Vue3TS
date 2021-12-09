@@ -20,6 +20,9 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
+import svgChat from "../../assets/svgs/chat.svg";
+import svgAnime from "../../assets/svgs/anime.svg";
+
 type Item = {
   src: string;
   name: string;
@@ -47,11 +50,11 @@ export default defineComponent({
   created() {
     this.itemList = [
       {
-        src: require("../../assets/svgs/chat.svg"),
+        src: svgChat,
         name: this.$translate("mainPage.chat"),
       },
       {
-        src: require("../../assets/svgs/anime.svg"),
+        src: svgAnime,
         name: this.$translate("mainPage.anime"),
         route: "anime",
       },
