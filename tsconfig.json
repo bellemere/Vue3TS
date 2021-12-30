@@ -12,7 +12,7 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "baseUrl": ".",
-    "types": ["webpack-env"],
+    "types": ["webpack-env", "jest"],
     "paths": {
       "@/*": ["src/*"]
     },
@@ -22,8 +22,8 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "__tests__/**/*.ts",
+    "__tests__/**/*.tsx"
   ],
   "exclude": ["node_modules"]
 }

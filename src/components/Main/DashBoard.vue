@@ -20,8 +20,8 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
-import svgChat from "../../assets/svgs/chat.svg";
-import svgAnime from "../../assets/svgs/anime.svg";
+import svgChat from "@/assets/svgs/chat.svg";
+import svgAnime from "@/assets/svgs/anime.svg";
 
 type Item = {
   src: string;
