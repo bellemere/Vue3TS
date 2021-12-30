@@ -20,7 +20,11 @@ export default defineComponent({
       shoeDrawer.setCameraPosition([0.2, 0.1, 0.3]);
       shoeDrawer.setGridHelper(1, 10);
 
-      const gltf = await shoeDrawer.loadGltf("/sneaker/scene.gltf");
+      console.log(process.env.BASE_URL);
+
+      const gltf = await shoeDrawer.loadGltf(
+        `${process.env.BASE_URL || "/"}sneaker/scene.gltf`
+      );
 
       shoeDrawer.setGLTFPosition(gltf, [-0.15, -0.1, 0.05]);
       shoeDrawer.enableControl();
