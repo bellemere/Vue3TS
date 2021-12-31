@@ -27,11 +27,9 @@ export default defineComponent({
   },
   methods: {
     async getPosts() {
-      console.log("------------>222");
       this.loading = true;
       this.posts = await axios.get("/api/posts");
       this.loading = false;
-      console.log("------------>555");
     },
   },
 });

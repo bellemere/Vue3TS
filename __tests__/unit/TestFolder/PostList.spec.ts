@@ -1,6 +1,6 @@
 import { mount, flushPromises } from "@vue/test-utils";
-//import axios from "axios";
 import PostList from "../../../src/components/TestFolder/PostList.vue";
+import axios from "axios";
 
 const mockPostList = [
   { id: 1, title: "title1" },
@@ -8,13 +8,12 @@ const mockPostList = [
 ];
 
 jest.mock("axios", () => ({
-  get: jest.fn(() => {
-    console.log("------------>333");
+  get: jest.fn(async () => {
+    await Promise.resolve().then();
     return mockPostList;
   }),
 }));
 
-/*
 test("loads posts on button click", async () => {
   const wrapper = mount(PostList);
 
@@ -31,7 +30,6 @@ test("loads posts on button click", async () => {
   expect(posts[0].text()).toContain("title1");
   expect(posts[1].text()).toContain("title2");
 });
-*/
 
 test("displays loading state on button click", async () => {
   const wrapper = mount(PostList);
@@ -39,9 +37,7 @@ test("displays loading state on button click", async () => {
   expect(wrapper.find('[role="alert"]').exists()).toBe(false);
   expect(wrapper.get("button").attributes()).not.toHaveProperty("disabled");
 
-  console.log("------------>111");
   await wrapper.get("button").trigger("click");
-  console.log("------------>444");
 
   expect(wrapper.find('[role="alert"]').exists()).toBe(true);
   expect(wrapper.get("button").attributes()).toHaveProperty("disabled");

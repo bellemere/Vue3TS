@@ -5,9 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "test": "jest"
+    "test": "jest",
+    "debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
   },
   "dependencies": {
     "axios": "^0.24.0",
