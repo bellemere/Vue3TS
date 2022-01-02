@@ -1,5 +1,5 @@
 import { mount } from "@vue/test-utils";
-import Form from "../../../src/components/TestFolder/Form.vue";
+import Form from "@/components/TestFolder/Form.vue";
 
 test("submits the form", async () => {
   const wrapper = mount(Form);

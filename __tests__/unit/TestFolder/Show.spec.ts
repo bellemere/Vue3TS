@@ -1,5 +1,5 @@
 import { mount } from "@vue/test-utils";
-import Show from "../../../src/components/TestFolder/Show.vue";
+import Show from "@/components/TestFolder/Show.vue";
 
 test("renders a greeting when show is true", async () => {
   const wrapper = mount(Show);

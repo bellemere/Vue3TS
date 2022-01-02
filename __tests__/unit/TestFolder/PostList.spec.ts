@@ -1,5 +1,5 @@
 import { mount, flushPromises } from "@vue/test-utils";
-import PostList from "../../../src/components/TestFolder/PostList.vue";
+import PostList from "@/components/TestFolder/PostList.vue";
 import axios from "axios";
 
 const mockPostList = [

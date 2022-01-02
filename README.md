@@ -23,4 +23,5 @@ All of these above can be told me via issues.
 - [x] A basic vue-route
 - [x] Some simple animation
 - [x] A simple chat room([Rust](https://github.com/bellemere/ws-chat-rust) as backend)
+- [x] Add Jest framework & test casee
 - [ ] Vue3 + GSAP

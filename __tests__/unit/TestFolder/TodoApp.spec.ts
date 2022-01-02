@@ -1,11 +1,10 @@
 import { mount, VueWrapper } from "@vue/test-utils";
-import TodoApp from "../../../src/components/TestFolder/TodoApp.vue";
+import TodoApp from "@/components/TestFolder/TodoApp.vue";
 
 describe("TodoApp Test", () => {
   let wrapper: VueWrapper;
 
   beforeAll(() => {
-    console.log("mount component");
     wrapper = mount(TodoApp);
   });
 
