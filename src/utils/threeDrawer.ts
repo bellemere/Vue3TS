@@ -127,8 +127,8 @@ export default class threeDrawer {
         (xhr) => {
           console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
         },
-        (error) => {
-          console.log("An error happened", error);
+        () => {
+          //console.log("An error happened", error);
           reject();
         }
       );

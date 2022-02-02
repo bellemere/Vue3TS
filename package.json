@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve --mode development",
+    "build": "vue-cli-service build --mode production",
     "lint": "vue-cli-service lint",
     "test": "jest",
     "debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
@@ -15,8 +15,7 @@
     "three": "^0.135.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
-    "vuex": "^4.0.0-0",
-    "webpack": "^4.0.0"
+    "vuex": "^4.0.0-0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -48,7 +47,8 @@
     "ts-jest": "^27.1.2",
     "typescript": "~4.1.5",
     "vue-svg-loader": "^0.16.0",
-    "vue-template-compiler": "^2.6.14"
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^4.0.0"
   },
   "peerDependencies": {}
 }

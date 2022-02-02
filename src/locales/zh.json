@@ -8,7 +8,8 @@
   },
   "mainPage": {
     "chat": "聊天",
-    "anime": "动画"
+    "anime": "动画",
+    "test": "测试"
   },
   "pageNotFound": "哇哦，你好像迷路了"
 }

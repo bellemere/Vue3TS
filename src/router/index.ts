@@ -1,9 +1,4 @@
-import {
-  createRouter,
-  createWebHistory,
-  createWebHashHistory,
-  RouteRecordRaw,
-} from "vue-router";
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/Home.vue";
 
 const routes: Array<RouteRecordRaw> = [
@@ -31,6 +26,12 @@ const routes: Array<RouteRecordRaw> = [
             /* webpackChunkName: "anime" */ "../components/Main/Anime.vue"
           ),
       },
+      {
+        path: "test",
+        name: "Test",
+        component: () =>
+          import(/* webpackChunkName: "anime" */ "../components/Main/Test.vue"),
+      },
     ],
   },
   {
@@ -44,10 +45,7 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history:
-    process.env.NODE_ENV === "production"
-      ? createWebHashHistory(process.env.BASE_URL)
-      : createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(process.env.BASE_URL),
   routes,
 });
 

@@ -44,7 +44,7 @@ const connection_pool = new Array(COLUMN).fill(null).map((_, index) => {
   let item = {
     index,
     message_list,
-    connection: new WebSocket("ws://localhost:8080/ws/"),
+    connection: new WebSocket(process.env.VUE_APP_WS_URL),
     model: ref(""),
   };
   (item.connection as WebSocket).onmessage = function (e) {

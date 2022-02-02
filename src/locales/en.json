@@ -8,7 +8,8 @@
   },
   "mainPage": {
     "chat": "Chat",
-    "anime": "Anime"
+    "anime": "Anime",
+    "test": "Test"
   },
   "pageNotFound": "Oops, you seem lost"
 }

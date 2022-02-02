@@ -2,12 +2,6 @@ import { App } from "vue";
 import { Lang } from "../typings";
 import { DEFAULT_LANG, LOCALSTORAGE_KEY } from "../global";
 
-declare module "@vue/runtime-core" {
-  export interface ComponentCustomProperties {
-    $translate: (key: string) => string;
-  }
-}
-
 export default {
   install: (app: App, options: Lang): void => {
     app.config.globalProperties.$translate = (key: string) => {

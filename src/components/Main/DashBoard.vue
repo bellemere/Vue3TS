@@ -11,7 +11,11 @@
       @click="itemClick(item.route)"
       :key="item.name"
     >
-      <img :src="item.src" :class="{ 'img-expand': isExpanded }" />
+      <img
+        :src="item.src"
+        :class="{ 'img-expand': isExpanded }"
+        @load="imgLoad"
+      />
       <div :class="{ 'span-expand': isExpanded }">{{ item.name }}</div>
     </div>
   </div>
@@ -22,6 +26,7 @@ import { defineComponent } from "vue";
 
 import svgChat from "@/assets/svgs/chat.svg";
 import svgAnime from "@/assets/svgs/anime.svg";
+import svgTest from "@/assets/svgs/test.svg";
 
 type Item = {
   src: string;
@@ -46,6 +51,9 @@ export default defineComponent({
     itemClick(route = "chat") {
       this.$router.push(`/main/${route}`);
     },
+    imgLoad() {
+      console.log("loaded");
+    },
   },
   created() {
     this.itemList = [
@@ -57,6 +65,11 @@ export default defineComponent({
         src: svgAnime,
         name: this.$translate("mainPage.anime"),
         route: "anime",
+      },
+      {
+        src: svgTest,
+        name: this.$translate("mainPage.test"),
+        route: "test",
       },
     ];
   },
